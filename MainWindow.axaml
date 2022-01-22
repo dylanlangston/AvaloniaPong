@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="800"
+		Width="{Binding field_Height}" Height="{Binding field_Width}"
+		CanResize="False"
+        x:Class="Pong.MainWindow"
+        Title="Pong">
+	<Canvas Width="{Binding field_Height}" Height="{Binding field_Width}" Background="Black" >
+		<TextBlock Width="{Binding field_Width}" Canvas.Top="10" Foreground="White" FontSize="30" TextAlignment="Center" Text="{Binding Score}"/>
+		<Rectangle Name="Player" Fill="White" Height="{Binding paddle_Height}" Width="{Binding paddle_Width}" Canvas.Top="{Binding PlayerY}"/>
+		<Rectangle Name="Computer" Fill="White" Height="{Binding paddle_Height}" Width="{Binding paddle_Width}" Canvas.Left="{Binding computerPaddleOffset}" Canvas.Top="{Binding ComputerY}"/>
+		<Ellipse Name="Ball" Fill="White" Height="{Binding ball_Size}" Width="{Binding ball_Size}" Canvas.Left="{Binding Ball.X}" Canvas.Top="{Binding Ball.Y}"/>
+	</Canvas>
+</Window>
