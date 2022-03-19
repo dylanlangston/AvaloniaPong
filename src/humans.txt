@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Dylan Langston -- Server Admin -- mail@dylanlangston.com
+
+# TECHNOLOGY
+
+    CSS3, HTML5, JS
+    Angular
+    Tailwind CSS
+    Font Awesome
+    And countless other forgotten heros, thank you!

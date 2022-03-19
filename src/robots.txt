@@ -1,0 +1,5 @@
+# www.robotstxt.org/
+
+# Disallow Crawling on personal pages
+User-agent: *
+Disallow: /foo/
